@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Manya Weather Dashboard</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Header -->
+
+      <h1>🌤 Weather Dashboard</h1>
+
+      <!-- Search Section -->
+
+      <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Enter city name" />
+
+        <button id="searchBtn">Search</button>
+      </div>
+
+      <button id="locationBtn" class="location-btn">📍 Use My Location</button>
+
+      <!-- Current Weather Card -->
+
+      <div class="weather-card">
+        <h2 id="cityName">City Name</h2>
+
+        <p id="country">Country</p>
+
+        <div id="weatherEmoji">🌤️</div>
+
+        <h1 id="temperature">--°C</h1>
+
+        <p id="condition">Weather Condition</p>
+
+        <p id="feelsLike">Feels Like: --°C</p>
+      </div>
+
+      <!-- Weather Statistics -->
+
+      <div class="stats">
+        <div class="stat-card">
+          💧
+
+          <h3>Humidity</h3>
+
+          <p id="humidity">--%</p>
+        </div>
+
+        <div class="stat-card">
+          🌬️
+
+          <h3>Wind</h3>
+
+          <p id="wind">-- km/h</p>
+        </div>
+
+        <div class="stat-card">
+          👁️
+
+          <h3>Visibility</h3>
+
+          <p id="visibility">-- km</p>
+        </div>
+
+        <div class="stat-card">
+          ☀️
+
+          <h3>UV Index</h3>
+
+          <p id="uv">--</p>
+        </div>
+      </div>
+
+      <!-- Navigation Buttons -->
+
+      <div class="forecast-buttons">
+        <button id="currentBtn">Current</button>
+
+        <button id="hourlyBtn">Hourly</button>
+
+        <button id="forecastBtn">3-Day Forecast</button>
+      </div>
+
+      <!-- Hourly Forecast -->
+
+      <div id="hourlyContainer" class="forecast-container"></div>
+
+      <!-- 3 Day Forecast -->
+
+      <div id="forecastContainer" class="forecast-container"></div>
+
+      <!-- Search History -->
+
+      <div class="history-section">
+        <h2>Recent Searches</h2>
+
+        <div id="history"></div>
+      </div>
+
+      <!-- Loading Message -->
+
+      <div id="loading">Loading...</div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
